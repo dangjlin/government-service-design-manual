@@ -1,7 +1,7 @@
 ---
 layout: detailed-guidance
-title: Security as enabler
-subtitle: Using technological change to build secure services
+title: 資訊安全作為數位服務的驅動者
+subtitle: 使用科技的進步打造符合資訊安全的數位服務
 category: technology
 type: guide
 audience:
@@ -18,121 +18,133 @@ breadcrumbs:
     url: /service-manual/technology
 ---
 
-Protecting information from valid threats to its confidentiality, integrity and availability is an enabler of digital services. Without such protection, digital services would be impossible or unsafe.
+數位服務的作用在於確保資訊的機密性，完整性和可得性不會受到威脅。 
+如果沒有這樣的確保，數位服務將難以提供服務或將會變得很不安全。 
 
-Please note: this guide sets out the governing principles for developing efficiently secured digital services. It also busts some common myths around security. There is another guide about [the practical process of security accreditation](/service-manual/making-software/information-security.html).
 
-##Security must be proportionate and justified
+請注意: 目前這份文件在有效地發展安全的數位服務提的規畫過程當中提供了一些管理指引。但它同時也破壞了一些對於資訊安全領域常見的迷思。這裡是另外一份指引提供您參考 [the practical process of security accreditation](/service-manual/making-software/information-security.html).
 
-Security must be applied intelligently. This means analysing the probable interest in official information from threat sources, establishing their capabilities and methods, and matching proportionate mitigations against these in a traceable manner. Other attempts at security run the risk of over-engineering security controls, or providing an illusion of security by not mitigating the actual risks.
+##規劃資訊安全必須是適當的並且量身訂製的
 
-Technology alone is never capable of addressing security and privacy risks: there needs to be a risk model that spans technology, people (their behaviours and culture), and processes.
+資訊安全必須明智地規劃及考量。這意味著必須從許多不同的威脅來源分析出官方訊息可能的利益有什麼，以及建立數位服務本身的能力及方法，以及針對這些能力，在設定為可以追蹤的前提下，比對出可以降低這些威脅來源其風險的相對應對照。 此外，其他也有可能設計出過於偏向工程技術的安全管控措施，或是設計出表面上看起來安全但是實際上毫無降低風險的管控措施，這些都是要予以思量的。
 
-##User experience and security aren’t exclusive
+技術本身從來沒有能夠解決安全和隱私風險：需要有一個跨越技術、人員（他們的行為和文化），流程的風險控管模型。
 
-Bad user experience arising from over-prescriptive use of technology can lead users to circumvent security controls by employing less secure unofficial IT solutions. Users who then retain the official IT systems suffer degraded productivity.
+##使用者體驗和資訊安全並不相互排斥
 
-The outcome is that security is not maintained and user experience is unpleasant. However, security and a good user experience do not need to be mutually exclusive.
+來自過於技術導向的使用方法產生了不好的使用者體驗可能會導致使用者通過使用安全性較低的，非正式的IT解決方案，以繞開安全控制。這些使用者保留了官方的IT系統卻面臨效率降低的結果。
 
-Modern, intelligently designed security can often be made largely transparent to the user, while also providing the enterprise with the confidence it needs that its information is suitably managed.
+其結果是，無法顧及資訊安全而且使用者體驗不愉快。然而，資訊安全和良好的使用者體驗不需要是相互排斥的。
 
-Where some degradation of user experience is unavoidable, a risk management analysis must consider the negative impact of users avoiding unpleasant official IT and degraded productivity. Furthermore, a transparent understanding of the mapping between official information, threat sources and capabilities, through to the required mitigations, enables informed risk management when there is a change in environment or appetite for risk.
+現代化智能地設計過的資訊安全基本上經常可以對使用者透明，同時還提供了企業所需要資訊能被適當地管理的信心。
 
-##Commercial threats, commercial solutions
+削減一些使用者體驗是不可避免的，風險管理分析必須同時考量使用者迴避不愉快的官方IT和降低生產效率等等的負面影響。此外，官方資料、威脅來源和數位服務具備的能力等面向之間的映射的透明了解，可以透過所需要的風險降低措施來達成。將可以促使了當有外在環境或風險偏好改變時，能有一個透明的風險管理機制被知曉。
 
-The vast majority of government’s information will fall into the lowest 'official tier'. This 'official tier' has been created on the basis of a ‘commercial threat model'. This means protection from the type of threats faced by a large company or bank, eg cyber criminals or hacktivists intent on stealing personal or financial information, or disrupting services.
+##商業威脅，商業解決方案
 
-To defend against threats such as these, government will use only the very best security technology sourced from the commercial market, and there will be no need for any bespoke or government-only controls at this level.
+政府的資訊，絕大多數將被排入最低的官方等級。這種“官方等級'' 是建立在"商業威脅模型”的基礎上。
+這意味著，政府通常得面對如同大公司或銀行所面對的威脅類型，例如網絡罪犯或黑客行動主義者意圖竊取個人或財務資訊，或中斷服務等等。
 
-A small set of software will perform security enforcing functions, such as firewalling or encrypting data. Such products require assurance that they function as advertised, achieved through the [CESG Commercial Product Assurance (CPA) scheme](https://www.cesg.gov.uk/servicecatalogue/Product-Assurance/CPA/Pages/CPA.aspx). This scheme is lightweight compared to previous schemes, reflecting the commercial grade risks for OFFICIAL information.
+為了防禦這些威脅類型，政府將使用從商用市場採購的最好的安全技術，面對這個等級的威脅時，就沒有必要需要採用任何客製或僅限於政府適用的控制做法。
 
-##Trust responsible users, audit and verify
+A一組小型軟體將強制資訊安全功能啟用，諸如防火牆或加密數據。這樣的產品需要保證可以具備如同他們廣告及聲稱的功能，同時可以通過CESG商業產品保證 [CESG Commercial Product Assurance (CPA) scheme](https://www.cesg.gov.uk/servicecatalogue/Product-Assurance/CPA/Pages/CPA.aspx). 方案來驗證的。相比之前的方案，體現了商業級風險的官方資訊，這個方案是輕量化。
 
-It's the intention of the [Civil Service Reform Plan](http://www.civilservice.gov.uk/wp-content/uploads/2012/06/Civil-Service-Reform-Plan-acc-final.pdf) and the new Security Classification Policy that there's greater emphasis on user responsibility, reducing expensive and overbearing technical controls. This requires proper training to assist users in handling sensitive information, and auditing to verify users are acting responsibly.
+##相信具有責任的使用者、審計和驗證
 
-Users should be trusted to carry out their roles and given the responsibility to do so securely.
+這是[Civil Service Reform Plan](http://www.civilservice.gov.uk/wp-content/uploads/2012/06/Civil-Service-Reform-Plan-acc-final.pdf) 的傾向以及考量新的資訊安全分類政策，意即更加強調使用者的責任，減少昂貴的，過分負擔的技術層面控制。
+這需要對使用者作一些適當的訓練，以幫助使用者在處理敏感資訊，以及需要一些查核用以驗證使用者的行為是帶著其所屬權責的操作。
 
-Audit and verification of user behaviour should be used to ensure policy compliance instead of preventative measures which add cost and degrade productivity. Such audit and verification should be implemented by services or network infrastructure, away from the end user device.
+我們應該相信使用者，使用他們自己的身分角色，並且相信他們是相當負責且知道應該機密安全的使用他們的身分角色。
 
-Government should not invest in security controls to protect users from risks they can protect themselves from. Departments should, however, invest in security controls that help defend individual users against threats that they themselves cannot reasonably defend.
+審計和驗證的使用者行為應該用來確保使用者有遵照既定規劃的政策來做。避免採用了會增加了成本，並降低生產效率的預防措施。
+這種審計和驗證應當從數位服務或網絡基礎設施的層面來執行，應該遠離終端使用者設備。
 
-For example, government should not invest in special technology to prevent civil servants working on sensitive information in an open busy public place; users should be able to judge, assess and use appropriate risk mitigation approaches by themselves.
+政府不應該對於那些明明是使用者可以保護他們自己免受風險的行為而投資、設計了安全控制。因此，相關部門反而要著重投資在知道使用者自己無法合理的保護自己的安全性的那些威脅防禦措施上。
 
-Likewise, civil servants should be able to exercise reasonable judgement about what information is sent to external recipients by email over the public internet. This will lead to reduced technical controls and their associated costs, while also optimising the usability and flexibility of the IT tools for the majority of responsible users.
+舉例來說，對於在一個開放繁忙的公共場所處理敏感資訊的公務員，政府不應該投資特殊的保護技術;使用者應該能夠判斷，評估和自行使用適當的降低風險的辦法。
 
-##New classification policy
-The new security policy provides for a simpler and more meaningful approach to denoting the value of information assets and threat model. Together with a set of common controls for OFFICIAL information, it enables a more consistent, standardised, reusable and interoperable approach to securing information assets in government.
+同樣，公務員應該能夠判斷哪些資訊是通過公共網路發送給電子郵件給外部人。因此通過使用者自身的理解及責任感，將可以減少技術層次的控制活動及其相關的成本，同時也優化了IT工具的易用性和靈活性。
 
-There should no longer be situations where information cannot be shared between bodies solely because their interpretation of the same security guidance has led to incompatible controls.
+##新分類政策
+新的資訊安全政策提供了更簡單，更有意義的方式來表示資訊資產價值和威脅模型。以及針對官方資訊提供一組共用一致的控制活動，它使得有了更加一致且標準化的、可重用的，和可互操作的方法，用來在政府機構可以保護資訊資產。
 
-The Cabinet Office Security Classification Policy provides guidance as to which information falls into the 'official' category.
+當不同機構之間需要互相分享資料時，因為彼此之間對於同一個資訊安全政策指引有不同的解讀，而不能互相分享時，這樣的情況將不會再發生了。
 
-##Procurement
+Cabinet Office Security Classification Policy 針對了被歸類為"官方"類別的資訊，提供了一套指引。
 
-It's important to start thinking about security from the very start of an IT procurement project, as bolting it on later invariably introduces additional cost and delays.
+##採購
 
-In fact, getting appropriate security into your system needs to start with specifying security requirements correctly in the contract. When we don't adequately articulate security requirements for design and ongoing maintenance of a system, our suppliers price for the level of contractual risk the ambiguity introduces.
+從IT採購專案一開始就需考量到資訊安全是很重要的，因為若是晚一點才考慮的話，將難以避免地導致額外的成本和專案的延遲。
 
-Specifying security requirements of the form "must be accreditable for IL3” must become a thing of the past. The risk appetite of departments varies and suppliers not used to working with government will struggle to find out what that means for the design and maintenance of their system -- adding cost and risk to both parties.
+事實上，如果要讓系統具備適當的資訊安全設計，則需要先在合約當中納入正確的資訊安全要求。當我們沒有充分闡明了系統設計時和及爾後持續維護系統的資訊安全需求，我們的供應商面對這樣的合約風險將會導致一些定價水準上的模糊不清。
 
-Instead, when writing IT contracts, departments should think about what they care about from an information assurance perspective and specify requirements that actually manage their concerns. As well as getting a solution that address the real business needs, this approach also allows industry to innovate to solve the security problem.
+所謂的指定形式的資訊安全要求是指“必須是經過認證符合IL3類型的使用標準”已經是過去的做法了。部門的風險偏好變化不同以及供應商不適應與政府合作等問題，在過去都會導致很難找出確切可以符合規定以設計和維護政府系統的做法是什麼 - 意思是，這將會增加了政府及供應商雙方的成本和風險。
 
-##Top 8 security myths
+取而代之的是，當制定IT合約的時候，各部門應該考慮清楚什麼是他們最關注的項目，例如應該從資訊保全的角度，以及思考確實可以幫助他們管理資訊安全風險所在處的做法有哪些。除此之外，取得一個全方位的商業解決方案，可以符合實際上業務面的所有需求，這樣的方式也可以激勵產業以創新的方式解決資訊安的問題。
 
-###1. "Security says No!"
+##前八名的資訊安全迷思
 
-It is often said that security is the reason something can't be done. This is very rarely the case in practice -- rather, security is being (mis)used as a handy excuse to not do something.
+###1. “資訊安全，意思是，不行！”
 
-Good information risk management practices allow organisations to understand the risks they are taking with their information assets, and work out the most effective ways to manage and control those risks -- while not hindering business.
+我們常常會聽到，當談論到資訊安全時，立刻就會想到這就是為什麼有些事情不能做的歸因。但是在實務上，這樣的禁止是很少發生的。更確切地說，資訊安全其實是常常被MIS人員用作一個方便的藉口，可以不去做某些事情。
 
-If someone tells you that "Security says No", or that "CESG say No", you should ask for more information to learn what the risks actually are, and what techniques and tools are available to help manage those risks.
+良好的資訊風險管理實務，可以幫助企業或組織去了解他們所處理的資訊資產相關聯的風險是哪些，並且可以制定出最有效的方式用來管理這些風險，而不會讓這些風險危害到業務或商業活動。
 
-###2. Accreditation of government systems is costly, time consuming, and doesn't help secure them.
+如果有人告訴你，“考量資訊安全，所以，不行！”，或者說“CESG說不可以”，你應該要求更多的資訊，以了解實際上到底是出自於哪些風險而說不行。此外，也要了解可以使用什麼科技技術和工具幫助管理這些風險。
 
-Accreditation effort should always be proportional to the complexity, threat and impact of a system. It is vital that the effort spent should scale to match the challenge at hand. Can the business accept the risks of undertaking a given activity? Accreditation documentation only needs to contain the information needed to enable this decision.
+###2. 政府的資訊服務系統取得安全認證會是花費昂貴，費時，而且對於保護資訊資產其實也沒有太大幫助。
 
-Clearly, any accreditation activity which just generates documentation that's never read is not adding value, nor helping to secure information. When performed well, accreditation helps risk owners have confidence that all aspects of a system's security have been appropriately considered, and that proper through-life security processes are in place to maintain information security.
+認證工作所需花費的心力始終是與資訊系統的複雜性，威脅和衝擊狀況成比例地相關聯的。
+最重要的是，所花費的心力應該是搭配與目前面臨的挑戰而成比例的擴大。例如，某個流程是否可以接受當進行特定活動時會變隨而來的風險？
+認證文件只需要包含適當的做出這個決定的相關資訊即可。
 
-###3. Open source software is more / less secure than proprietary code.
+很顯然，那些只產生了一大堆認證文件，而且再也不會拿出來看的認證活動是毫無價值的，更對資訊安全毫無幫助。反而，如果是妥善確實的執行的話，認證活動將可以幫助風險管理者有信心去面對、處理、考量這個資訊系統各項面向的風險，更可以設計出符合完整的資訊安全生命週期的流程，以確保資訊系統的資訊安全均予以完備的保證。
 
-Experience has shown that the licensing model for software is not an accurate gauge for the security of the finished item. There are very securely developed open source projects and proprietary products. The opposite is also true. The experience and competence of those developing code is of primary importance.
+###3. 開放原始碼的軟體應該比專用或特定程式碼來得更多/或更不安全。
 
-The same considerations should be given to the security of open source products as are applied to proprietary code. The [Open Source toolkit](https://www.gov.uk/government/publications/open-source-procurement-toolkit) has more information.
+經驗表明，是不是採用有版權的軟體，這不是做為量測數位服務產品是不是安全的有效指標。市場上其實有著非常安全地開發的開放原始碼專案和專利產品。相反來看也是如此，有版權的軟體不見得就會以考量安全性的角度來開發。因此，總括來說，開發程式的經驗和能力反而是最重要的。不論是開放原始碼或封閉式商業版權軟體來說都一樣。
 
-###4. "Product X can't be used because it isn't accredited by CESG"
+同樣地，針對安全也必須記得要考慮到在專用程式碼內要包含採用開放原始碼時應該要注意到其產品的安全性。[Open Source toolkit](https://www.gov.uk/government/publications/open-source-procurement-toolkit) 這個連結，有著更多資訊。
 
-There are 3 problems with this statement.
+###4. “產品X不能被使用，因為它未通過CESG 授權委任”
 
-Firstly, CESG don't accredit products -- they provide assurance in the security properties of products and certify them when they meet various standards.
+針對這個第四個迷思，它有3個問題:
 
-Secondly, only those products which provide a security enforcing function need to be evaluated and certified by CESG; products like switches or email servers don't need to be CESG-certified.
+首先，CESG不授權或委任哪些產品或服務可以使用 - CESG只提供針對產品的安全性能提供保證，以及驗證這些產品是否符合任何各種式樣的標準。
 
-Finally, CESG certification of a product is a component of risk management -- it doesn't absolve an organisation of their responsibilities to information security. While using certified products should certainly speed up the risk management process, it isn't mandatory.
+其次，只有那些有提供強化資訊安全功能的產品需要被CESG評估及驗證;產品，如網路交換機或電子郵件伺服器等是不需要由CESG認證的。
 
-###5. Restricted systems need to have bespoke security controls.
+最後，產品是否經過CESG認證，是風險管理的一部分 - 它並不能免除組織或單位的對於產品的資訊安全的責任。而是，當你的團隊有使用經過CESG認證的產品時，理當可以加快風險管理過程，因此，採不採用認證產品並不是強制性的。
 
-Restricted systems can be built today using assured commodity security products -- many of which are found natively in the operating systems of modern platforms.
+###5. 受限制的系統需要有定制的資訊安全控制。
 
-In the past, some of the security controls which were recommended for protecting Restricted IT systems were bespoke variants of commodity products, or were "government specials". The requirements which drove these choices are no longer relevant given advances in commodity IT, and better approaches are available to provide an equivalent level of security, but with enhanced usability and overall cost of ownership.
+在許多是原生的現代平台作業系統中 - 受限制的系統可以使用目前市場上的產品來打造構建安全的平台。
 
-Foundation grade assured products are appropriate for the protection of these systems, and commodity security products (including open source) can achieve this grade of certification.
+在過去，一些為了被用來保護受限制的系統的資訊安全控制機制，被訂製成相當多不同的商品或是稱為“特別為政府單位訂製”。
+這導致了被綁定在這些訂製產品的資訊安全產品選擇方面，其產品本身都不再會有相關程度的進步。
+相對來說，更好的方法是，應該是定義、提供一套資訊安全的同等水平，但是資訊安全產品應該帶著更好的可用性和更佳的整體成本。
 
-###6. "I'm not a target for cyber attack!"
+基礎等級保證了這些資訊安全產品適用於這些資訊系統；廣泛的資訊安全產品（包括開放原始碼）的保護可以達到這個等級的認證。
 
-Sometimes it's obvious that attackers are going to be interested in getting hold of your sensitive information -- it has clear value to someone. However, immediate financial reward isn't the only reason government IT systems get attacked.
+###6. “我不是網絡攻擊的目標！”
 
-Attackers may be disgruntled insiders, seeking to disrupt or embarrass an organisation. Attacks may come from protest groups, seeking a platform for their views. Or attacks may seek to use one system as a point to launch attacks on another -- so you might not be the primary target, but might unwittingly be a conduit to them.
+有時很明顯，攻擊者對於得到你手上所握有的敏感資訊是非常有興趣的 - 這些敏感資訊對某些人來說有很明確的價值。然而，有時候立即的金錢獎勵不是唯一的政府IT系統遭到攻擊的原因。
 
-Are you specifically being targeted? Maybe not -- but your systems and internet presence probably are being attacked on a daily basis for a wide range of reasons.
+攻擊者可能會促使政府內部人感到不愉快，嘗試破壞或使組織感到難堪。攻擊可能來自抗議團體，他們要尋找一個可以表達他們意見的平台。
+或攻擊者會試圖攻擊一個系統，作為一個中界點來發動對其他網站或系統的攻擊 - 所以你的數位服務系統可能不會成為主要的目標，但可能在不知不覺中變成他們所使用的一個管道。
 
-###7. Impact Levels define security requirements.
+你是被作為一個特定的攻擊對象？也許不會發生 - 但你的系統和現存的網路環境每天都是可能基於各式樣廣泛的原因而被攻擊的。
 
-Asking a someone to build an "IL3 system" or to "protect at IL5" is a misuse of the Business Impact Level framework, and will generally cause confusion and an ineffective approach to securing information. Business Impact Levels are intended to help organisations to think about the consequences of certain events, and thus steer where effort should be used when managing information risks.
+###7. 資訊安全需求來自於衝擊級別的定義。 
 
-There is no standard set of technical, procedural or personnel controls for any particular Impact Level, and so specifying requirements in terms of Impact Levels is unclear and inaccurate. Instead, security requirements should be defined in terms of the level of protection that each information asset should be given, and expectations around its through-life protection.
+問某個人建立一個“IL3等級系統”或“以IL5等及保護系統”等誤用了"業務衝擊程度架構"(Business Impact Level Framework)，並且通常會導致採用了誤導的和無效的方法來保護資訊。
+業務衝擊水準的目的是幫助組織去思考特定事件的後果，從而引導思考應該將在心力放在哪裡用來管理資訊風險。
 
-###8. "I've got lots of IL3 records, which aggregate to IL4, so I need to build a confidential back end system"
+對於任何特定的衝擊水準來說，是沒有一套標準的科技技術，操作程序，人員控制等，因此在衝擊水準方面的需求來說，會不明確和不準確。
+從另一個角度來看，資訊安全要求，應該是透過考量欲保護的資訊資產其生命週期的環節，而要給它們多大程度的保護水準來定義。
 
-It's true that if you are building a system which handles many records, the impact of loss of many of them is likely to be higher than loss of one or two. Although Business Impact Levels are often misused as shorthand for protective markings, there is no direct mapping from Impact Level to protective marking.
+###8. “我有很多的IL3等級的記錄，這些記錄累計後會升級到IL4等級，所以我需要建立一個保密的後端系統”
 
-In the IL3 aggregated to IL4 example, rather than building a system capable of storing confidential records, it's likely to be acceptable to simply add some simple additional controls around the data store, to reduce the risk of a bulk loss of data.
+如果你正在建造一個處理許多資料的系統，你的系統的損失及衝擊程度當然會遠高於只有損失一筆或兩筆資料的系統，這是無庸置疑的。 雖然業務衝擊水準(Business Impact Level) 通常會因為可以很方便的拿來定義水準而被誤用，但是確實是因為並沒有設計一套可以對應衝擊水準和保護水準的比對表。
+
+在一個從IL3等級累計到IL4等級的例子來說，並不是要建立一套儲存機密性資料的系統，反而是可以用增加一些簡單的對保護資料額外的控制保護，去降低資料損失的風險，這樣方式反而比較容易接受。
